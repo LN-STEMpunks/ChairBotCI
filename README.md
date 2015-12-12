@@ -3,3 +3,4 @@
 
 This is Java code for our Chair Bot, it's literally just tank drive for a chair on wheels.
 
+See more on our robots on our site: http://lnstempunks.org/about/#robots
