@@ -27,8 +27,11 @@ public class RobotMap {
 	
 	public final int cstick = 0;
 	
-	public final int leftmotorpin = 0;
-	public final int rightmotorpin = 1;
+	public final int leftmotorpinb = 2;
+	public final int leftmotorpinf = 1;
+	public final int rightmotorpinb = 3;
+	public final int rightmotorpinf = 4
+                ;
 	
 	//public static RobotDrive robotdrive;
 	

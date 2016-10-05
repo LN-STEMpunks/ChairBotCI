@@ -22,14 +22,18 @@ public class Drive extends Subsystem {
 
   // Put methods for controlling this subsystem
   // here. Call these from Commands.
-  private static SpeedController leftmotor = new DriveMotor(robotMap.leftmotorpin);
-  private static SpeedController rightmotor = new DriveMotor(robotMap.rightmotorpin);
+  private static SpeedController leftmotorf = new DriveMotor(robotMap.leftmotorpinf);
+  private static SpeedController leftmotorb = new DriveMotor(robotMap.leftmotorpinb);
+  private static SpeedController rightmotorf = new DriveMotor(robotMap.rightmotorpinf);
+  private static SpeedController rightmotorb = new DriveMotor(robotMap.rightmotorpinb);
 
   //RobotDrive robotdrive = RobotMap.robotdrive;
 
   public void doNothing() {
-    rightmotor.set(0);
-    leftmotor.set(0);
+    rightmotorf.set(0);
+    rightmotorb.set(0);
+    leftmotorf.set(0);
+    leftmotorb.set(0);
   }
 
   public void initDefaultCommand() {
@@ -38,7 +42,9 @@ public class Drive extends Subsystem {
   }
 
   public void TankDrive(double rightmotorspeed, double leftmotorspeed) {
-    rightmotor.set(rightmotorspeed);
-    leftmotor.set(-leftmotorspeed);
+    rightmotorf.set(rightmotorspeed);
+    rightmotorb.set(rightmotorspeed);
+    leftmotorf.set(leftmotorspeed);
+    leftmotorb.set(leftmotorspeed);
   }
 }
